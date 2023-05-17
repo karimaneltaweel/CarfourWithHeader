@@ -14,11 +14,11 @@ extension HeaderController : UICollectionViewDelegate , UICollectionViewDataSour
         
         switch collectionView{
         case MainCollection:
-            numOfItem = 4
+            numOfItem = arrayOfMain.count
         case category:
-            numOfItem = 5
+            numOfItem = arrayOfCategory.count
         default:
-            numOfItem = 1
+            numOfItem = arrayOfMain.count
         }
         return numOfItem
     }
@@ -31,23 +31,21 @@ extension HeaderController : UICollectionViewDelegate , UICollectionViewDataSour
             guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCollectionCell", for: indexPath) as? MainCollectionCell else{
                 fatalError("un dequeue cell")
             }
-            cell.mainImage.image =  UIImage(named: "food")
-            cell.mainLabel.text = "Food"
+            cell.setUpMain(cell: arrayOfMain[indexPath.row])
             return cell
             
         case category :
             guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCollectionCell", for: indexPath) as? categoryCollectionCell else{
                 fatalError("un dequeue cell")
             }
-            cell.CategoryLabel.text = "Fish"
+            cell.setUpCategory(cell: arrayOfCategory[indexPath.row])
             return cell
             
         default:
             guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCollectionCell", for: indexPath) as? MainCollectionCell else{
                 fatalError("un dequeue cell")
             }
-            cell.mainImage.image =  UIImage(named: "food")
-            cell.mainLabel.text = "Fish"
+            cell.setUpMain(cell: arrayOfMain[indexPath.row])
             return cell
         }
         
@@ -61,14 +59,17 @@ extension HeaderController : UICollectionViewDelegateFlowLayout{
 
         switch collectionView{
         case MainCollection:
-            sizeOfCell = CGSize(width: (MainCollection.frame.width * 0.45)-20, height: (MainCollection.frame.height * 0.9))
+            sizeOfCell = CGSize(width: (MainCollection.frame.width * 0.36)-20, height: (MainCollection.frame.height * 0.86))
         case category:
-            sizeOfCell = CGSize(width: (category.frame.width * 0.35)-20, height:(category.frame.height * 0.7)-4)
+            sizeOfCell = CGSize(width: (category.frame.width * 0.28)-20, height:(category.frame.height * 0.7)-4)
         default:
             sizeOfCell = CGSize(width: MainCollection.frame.width, height: MainCollection.frame.height)
         }
         return sizeOfCell
 
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 5, left: 8, bottom: 5, right: 8)
     }
     
 }

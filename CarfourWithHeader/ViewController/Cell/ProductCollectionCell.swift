@@ -1,5 +1,5 @@
 //
-//  categoryCollectionCell.swift
+//  ProductCollectionCell.swift
 //  CarfourWithHeader
 //
 //  Created by kariman eltawel on 17/05/2023.
@@ -7,10 +7,13 @@
 
 import UIKit
 
-class categoryCollectionCell: UICollectionViewCell {
-
-
-    @IBOutlet weak var CategoryLabel: UILabel!
+class ProductCollectionCell: UICollectionViewCell {
+    
+    @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet weak var Carefour: UIImageView!
+    
+    @IBOutlet weak var oldPrice: UILabel!
+    
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
         self.layer.cornerRadius = 23
@@ -18,10 +21,5 @@ class categoryCollectionCell: UICollectionViewCell {
         self.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).cgColor
         self.layer.borderWidth = 2
     }
-    
-    func setUpCategory(cell:CategoryData){
-        
-        CategoryLabel.text = cell.mainText
-    }
-
 }
+

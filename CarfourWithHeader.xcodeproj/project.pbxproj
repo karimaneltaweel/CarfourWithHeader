@@ -21,6 +21,7 @@
 		DDD2A3A52A14A663006AD5EB /* HeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3A42A14A663006AD5EB /* HeaderController.swift */; };
 		DDD2A3A72A14A6AC006AD5EB /* HeaderController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3A62A14A6AC006AD5EB /* HeaderController+Delegate.swift */; };
 		DDD2A3A92A14E250006AD5EB /* CollectionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3A82A14E250006AD5EB /* CollectionsData.swift */; };
+		DDD2A3AB2A14F73E006AD5EB /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3AA2A14F73E006AD5EB /* ProductCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DDD2A3A42A14A663006AD5EB /* HeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderController.swift; sourceTree = "<group>"; };
 		DDD2A3A62A14A6AC006AD5EB /* HeaderController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeaderController+Delegate.swift"; sourceTree = "<group>"; };
 		DDD2A3A82A14E250006AD5EB /* CollectionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsData.swift; sourceTree = "<group>"; };
+		DDD2A3AA2A14F73E006AD5EB /* ProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				DDD2A39B2A14A252006AD5EB /* MainCollectionCell.xib */,
 				DDD2A3A02A14A52B006AD5EB /* categoryCollectionCell.swift */,
 				DDD2A3A12A14A52B006AD5EB /* categoryCollectionCell.xib */,
+				DDD2A3AA2A14F73E006AD5EB /* ProductCollectionCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				DDD2A3A92A14E250006AD5EB /* CollectionsData.swift in Sources */,
 				DDD2A39C2A14A252006AD5EB /* MainCollectionCell.swift in Sources */,
 				DDD2A3A22A14A52B006AD5EB /* categoryCollectionCell.swift in Sources */,
+				DDD2A3AB2A14F73E006AD5EB /* ProductCollectionCell.swift in Sources */,
 				DDD2A39F2A14A3C8006AD5EB /* CarrefourController+Delegate.swift in Sources */,
 				DDD2A3832A149B8E006AD5EB /* CarfourController.swift in Sources */,
 				DDD2A37F2A149B8E006AD5EB /* AppDelegate.swift in Sources */,

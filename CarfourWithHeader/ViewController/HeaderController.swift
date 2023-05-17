@@ -8,12 +8,17 @@
 import UIKit
 
 class HeaderController: UICollectionReusableView {
+    var arrayOfMain = [MainData(mainImage: UIImage(named: "food")!, mainText: "Food"),
+                    MainData(mainImage: UIImage(named: "home")! , mainText: "Home"),
+                    MainData(mainImage: UIImage(named: "Cleaners")! , mainText: "Cleaners")]
+     
+   var arrayOfCategory = [CategoryData(mainText: "Fish" ),CategoryData(mainText:"Milk"),CategoryData(mainText: "Chicken"),CategoryData(mainText:"Oil & Ghee")]
+ 
     
     @IBOutlet weak var MainCollection: UICollectionView!{
         didSet{
             
             MainCollection.register(UINib(nibName: "MainCollectionCell", bundle: nil), forCellWithReuseIdentifier: "MainCollectionCell")
-            //            collectionView.register(UINib(nibName: "categoryCollectionCell", bundle: nil), forCellWithReuseIdentifier: "categoryCollectionCell")
             
             MainCollection.dataSource = self
             MainCollection.delegate = self
@@ -21,6 +26,7 @@ class HeaderController: UICollectionReusableView {
         
         
     }
+    
     @IBOutlet weak var category: UICollectionView!{
         didSet{
             

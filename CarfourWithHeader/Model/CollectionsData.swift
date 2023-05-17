@@ -17,17 +17,4 @@ struct CategoryData{
     let mainText : String
 }
 
-//extension CarfourController{
-//
-//    func setUpMain(cell:MainData){
-//
-//        image.image = cell.cellImage
-//        label.text = cell.cellLabel
-//
-//    }
-//    func setupCategory(){
-//
-//    }
-//
-//}
 
