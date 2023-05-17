@@ -21,4 +21,11 @@ class MainCollectionCell: UICollectionViewCell {
         self.layer.borderColor = #colorLiteral(red: 0.9616140723, green: 0.9567009807, blue: 0.9567860961, alpha: 1).cgColor
         self.layer.borderWidth = 2
     }
+    
+    func setUpMain(cell:MainData){
+        
+        mainImage.image = cell.mainImage
+        mainLabel.text = cell.mainText
+        
+    }
 }

@@ -20,6 +20,7 @@
 		DDD2A3A32A14A52B006AD5EB /* categoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD2A3A12A14A52B006AD5EB /* categoryCollectionCell.xib */; };
 		DDD2A3A52A14A663006AD5EB /* HeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3A42A14A663006AD5EB /* HeaderController.swift */; };
 		DDD2A3A72A14A6AC006AD5EB /* HeaderController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3A62A14A6AC006AD5EB /* HeaderController+Delegate.swift */; };
+		DDD2A3A92A14E250006AD5EB /* CollectionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3A82A14E250006AD5EB /* CollectionsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DDD2A3A12A14A52B006AD5EB /* categoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryCollectionCell.xib; sourceTree = "<group>"; };
 		DDD2A3A42A14A663006AD5EB /* HeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderController.swift; sourceTree = "<group>"; };
 		DDD2A3A62A14A6AC006AD5EB /* HeaderController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeaderController+Delegate.swift"; sourceTree = "<group>"; };
+		DDD2A3A82A14E250006AD5EB /* CollectionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		DDD2A3942A149D11006AD5EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DDD2A3A82A14E250006AD5EB /* CollectionsData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD2A3A92A14E250006AD5EB /* CollectionsData.swift in Sources */,
 				DDD2A39C2A14A252006AD5EB /* MainCollectionCell.swift in Sources */,
 				DDD2A3A22A14A52B006AD5EB /* categoryCollectionCell.swift in Sources */,
 				DDD2A39F2A14A3C8006AD5EB /* CarrefourController+Delegate.swift in Sources */,

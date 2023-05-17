@@ -61,9 +61,9 @@ extension HeaderController : UICollectionViewDelegateFlowLayout{
 
         switch collectionView{
         case MainCollection:
-            sizeOfCell = CGSize(width: (MainCollection.frame.width * 0.45)-20, height: (MainCollection.frame.height * 0.85)-4)
+            sizeOfCell = CGSize(width: (MainCollection.frame.width * 0.45)-20, height: (MainCollection.frame.height * 0.9))
         case category:
-            sizeOfCell = CGSize(width: (category.frame.width * 0.35)-20, height:(category.frame.height * 0.6)-4)
+            sizeOfCell = CGSize(width: (category.frame.width * 0.35)-20, height:(category.frame.height * 0.7)-4)
         default:
             sizeOfCell = CGSize(width: MainCollection.frame.width, height: MainCollection.frame.height)
         }
