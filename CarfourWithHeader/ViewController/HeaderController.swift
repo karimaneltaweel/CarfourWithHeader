@@ -9,11 +9,13 @@ import UIKit
 
 class HeaderController: UICollectionReusableView {
     var arrayOfMain = [MainData(mainImage: UIImage(named: "food")!, mainText: "Food"),
-                    MainData(mainImage: UIImage(named: "home")! , mainText: "Home"),
-                    MainData(mainImage: UIImage(named: "Cleaners")! , mainText: "Cleaners")]
-     
-   var arrayOfCategory = [CategoryData(mainText: "Fish" ),CategoryData(mainText:"Milk"),CategoryData(mainText: "Chicken"),CategoryData(mainText:"Oil & Ghee")]
- 
+                       MainData(mainImage: UIImage(named: "home")! , mainText: "Home"),
+                       MainData(mainImage: UIImage(named: "Cleaners")! , mainText: "Cleaners")]
+    
+    var arrayOfCategory = [CategoryData(mainText: "Fish" ),CategoryData(mainText:"Milk"),CategoryData(mainText: "Chicken"),CategoryData(mainText:"Oil & Ghee")]
+    
+    
+    var selectedItem = 0
     
     @IBOutlet weak var MainCollection: UICollectionView!{
         didSet{
