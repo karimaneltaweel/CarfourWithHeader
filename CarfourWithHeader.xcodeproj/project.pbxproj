@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD79ED1D2A1A1F3500E7153A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD79ED1C2A1A1F3500E7153A /* Colors.xcassets */; };
+		DD79ED1F2A1A1F7C00E7153A /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79ED1E2A1A1F7C00E7153A /* ColorExt.swift */; };
 		DDD2A37F2A149B8E006AD5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A37E2A149B8E006AD5EB /* AppDelegate.swift */; };
 		DDD2A3812A149B8E006AD5EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3802A149B8E006AD5EB /* SceneDelegate.swift */; };
 		DDD2A3832A149B8E006AD5EB /* CarfourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2A3822A149B8E006AD5EB /* CarfourController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD79ED1C2A1A1F3500E7153A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DD79ED1E2A1A1F7C00E7153A /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		DDD2A37B2A149B8E006AD5EB /* CarfourWithHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarfourWithHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD2A37E2A149B8E006AD5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDD2A3802A149B8E006AD5EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD79ED1B2A1A191A00E7153A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DDD2A3942A149D11006AD5EB /* Model */,
+				DDD2A3932A149CF8006AD5EB /* View */,
+				DDD2A3922A149CEA006AD5EB /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		DDD2A3722A149B8D006AD5EB = {
 			isa = PBXGroup;
 			children = (
@@ -74,19 +88,19 @@
 		DDD2A37D2A149B8E006AD5EB /* CarfourWithHeader */ = {
 			isa = PBXGroup;
 			children = (
-				DDD2A3942A149D11006AD5EB /* Model */,
-				DDD2A3932A149CF8006AD5EB /* View */,
-				DDD2A3922A149CEA006AD5EB /* ViewController */,
+				DD79ED1B2A1A191A00E7153A /* Home */,
 				DDD2A37E2A149B8E006AD5EB /* AppDelegate.swift */,
 				DDD2A3802A149B8E006AD5EB /* SceneDelegate.swift */,
 				DDD2A3872A149B90006AD5EB /* Assets.xcassets */,
+				DD79ED1C2A1A1F3500E7153A /* Colors.xcassets */,
 				DDD2A3892A149B90006AD5EB /* LaunchScreen.storyboard */,
 				DDD2A38C2A149B90006AD5EB /* Info.plist */,
+				DD79ED1E2A1A1F7C00E7153A /* ColorExt.swift */,
 			);
 			path = CarfourWithHeader;
 			sourceTree = "<group>";
 		};
-		DDD2A3922A149CEA006AD5EB /* ViewController */ = {
+		DDD2A3922A149CEA006AD5EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				DDD2A3992A14A219006AD5EB /* Cell */,
@@ -95,7 +109,7 @@
 				DDD2A3A42A14A663006AD5EB /* HeaderController.swift */,
 				DDD2A3A62A14A6AC006AD5EB /* HeaderController+Delegate.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DDD2A3932A149CF8006AD5EB /* View */ = {
@@ -187,6 +201,7 @@
 				DDD2A39D2A14A252006AD5EB /* MainCollectionCell.xib in Resources */,
 				DDD2A38B2A149B90006AD5EB /* LaunchScreen.storyboard in Resources */,
 				DDD2A3882A149B90006AD5EB /* Assets.xcassets in Resources */,
+				DD79ED1D2A1A1F3500E7153A /* Colors.xcassets in Resources */,
 				DDD2A3862A149B8E006AD5EB /* Main.storyboard in Resources */,
 				DDD2A3A32A14A52B006AD5EB /* categoryCollectionCell.xib in Resources */,
 			);
@@ -206,6 +221,7 @@
 				DDD2A39F2A14A3C8006AD5EB /* CarrefourController+Delegate.swift in Sources */,
 				DDD2A3832A149B8E006AD5EB /* CarfourController.swift in Sources */,
 				DDD2A37F2A149B8E006AD5EB /* AppDelegate.swift in Sources */,
+				DD79ED1F2A1A1F7C00E7153A /* ColorExt.swift in Sources */,
 				DDD2A3A72A14A6AC006AD5EB /* HeaderController+Delegate.swift in Sources */,
 				DDD2A3812A149B8E006AD5EB /* SceneDelegate.swift in Sources */,
 				DDD2A3A52A14A663006AD5EB /* HeaderController.swift in Sources */,

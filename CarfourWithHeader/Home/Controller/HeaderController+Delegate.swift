@@ -41,7 +41,7 @@ extension HeaderController : UICollectionViewDelegate , UICollectionViewDataSour
             cell.setUpCategory(cell: arrayOfCategory[indexPath.row])
             
             if indexPath.row == selectedItem  {
-                cell.contentView.backgroundColor = #colorLiteral(red: 0.0861357972, green: 0.4787014127, blue: 0.6216185093, alpha: 1)
+                cell.contentView.backgroundColor = .primaryColor
             }
             else{
                 cell.contentView.backgroundColor = #colorLiteral(red: 0.9616140723, green: 0.9567009807, blue: 0.9567860961, alpha: 1)

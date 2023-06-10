@@ -11,17 +11,23 @@ class CarfourController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
    
-    @IBOutlet weak var searchBar: UITextField!
+    @IBOutlet weak var searchBar: UITextField! {
+        didSet{
+            setupSearchBarView()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupSearchBarView()
+    }
+    
+    private func setupSearchBarView() {
         searchBar.leftViewMode = UITextField.ViewMode.always
         let imageView = UIImageView(frame: CGRect(x:0, y: 0, width: 20, height: 20))
         let image = UIImage(systemName: "magnifyingglass")
         imageView.image = image
         searchBar.leftView = imageView
     }
-
 }
 
